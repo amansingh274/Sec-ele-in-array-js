@@ -1,14 +1,8 @@
-let arr=[10,30,56,43,29,64]
-let max = Math.max(arr[0],arr[1]);
-let smax=Math.min(arr[0],arr[1]);
-
-for(let i=2;i<arr.length;i++){
-   if(arr[i]>max){
-    smax=max
-    max=arr[i]
-   }else if(arr[i]>smax && max!=arr[i]){
-    smax=arr[i]
-   }
+let arr=[60,50,40,30,20]
+let newarr=new Array(arr.length);
+let j=0;
+for(let i=arr.length-1;i>=0;i--){
+newarr[j]=arr[i]
+j++
 }
-
-console.log(smax)
+console.log(newarr)
